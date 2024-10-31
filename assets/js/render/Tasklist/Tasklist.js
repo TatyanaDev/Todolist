@@ -1,8 +1,9 @@
+import { createElement } from "../../../utils/createElement.js";
 import { data } from "../../data/data.js";
 import { Task } from "./Task/Task.js";
 
 export function Tasklist() {
-  const container = document.createElement("ol");
+  const container = createElement("ol");
 
   const tasks = data.todolist.tasks;
 

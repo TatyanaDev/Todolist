@@ -44,6 +44,10 @@ export function deleteTask(taskId) {
 }
 
 export function addTask(title) {
+  if (title.trim() === "") {
+    return;
+  }
+
   const newTask = {
     id: crypto.randomUUID(),
     title,
@@ -56,6 +60,10 @@ export function addTask(title) {
 
 export function editTask(newTitle) {
   const taskId = data.editTaskDialog.taskId;
+
+  if (newTitle.trim() === "") {
+    return;
+  }
 
   const task = data.todolist.tasks.find((task) => task.id === taskId);
 

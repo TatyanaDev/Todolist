@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #99ff99;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  margin: 0;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.dialog {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
