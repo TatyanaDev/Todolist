@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      dialog {
+        position: fixed; /* Фиксированное позиционирование относительно вьюпорта */
+        left: 50%; /* Позиционирование от левого края вьюпорта */
+        top: 50%; /* Позиционирование от верхнего края вьюпорта */
+        transform: translate(-50%, -50%); /* Смещение диалога на 50% его ширины и высоты для центрирования */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <hr />
+
+    <div>
+      <h1>Todolist</h1>
+
+      <ol>
+        <li>Learn HTML <button>❌</button></li>
+        <li>Learn CSS <button>❌</button></li>
+        <li>Learn JS<button>❌</button></li>
+        <li>Learn React <button>❌</button></li>
+      </ol>
+
+      <button>+ add</button>
+
+      <!-- <dialog open>
+        <h4>New Task</h4>
+
+        <input placeholder="Input your new task" />
+
+        <button>save</button>
+        <button>cancel</button>
+      </dialog> -->
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
